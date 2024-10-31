@@ -1,0 +1,11 @@
+name: 'Version Echo Action'
+description: 'A simple action that echoes version number'
+outputs:
+  version:
+    description: 'The version number'
+    value: '1.0.0'
+runs:
+  using: "composite"
+  steps:
+    - run: echo "This is the version 1.0.0"
+      shell: bash
